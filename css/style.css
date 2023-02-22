@@ -146,15 +146,20 @@ section img#mountains_front
     background: none;
     padding: 1rem;
     border-radius: 10px;
-    margin: 4rem auto;
-    width: 200px;
+    /* margin: 4rem auto; */
+    /* width: 200px; */
     cursor: pointer;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
+    position: relative;
     transition: transform 0.4s ease;
   }
   .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #691c70;
     color: white;
     padding: 0.5rem;
@@ -172,3 +177,8 @@ section img#mountains_front
     opacity: 1;
   }
   
+  /* NEW CLASSES ADDED */
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
